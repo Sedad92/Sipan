@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1535850452425-140ee4a8dbae?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace 'restaurant_bg.jpg' with your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff; /* White text color */
+            text-align: center;
+            padding-top: 50px; /* Adjust top padding */
+        }
+
+        .logo {
+            width: 200px; /* Adjust logo width */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; /* Center logo and add bottom margin */
+            border-radius: 50%; /* Circular logo */
+        }
+
+        .welcome-text {
+            font-size: 24px; /* Adjust font size */
+            margin-bottom: 20px; /* Add bottom margin */
+        }
+
+        .btn-menu {
+            background-color: #543310; /* Dark brown button color */
+            color: #fff; /* White text color */
+            padding: 10px 20px; /* Adjust padding */
+            border: none;
+            border-radius: 20px; /* Rounded button */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth background color transition */
+        }
+
+        .btn-menu:hover {
+            background-color: #704214; /* Darker brown on hover */
+        }
+
+        .footer {
+            background-color: #543310; /* Dark brown background for footer */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo and Welcome Text -->
+    <img class="logo" src="https://images.unsplash.com/photo-1619454016518-697bc231e7cb?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant Logo" alt="Restaurant Logo"> <!-- Replace 'restaurant_logo.png' with your logo -->
+    <div class="welcome-text">
+        <p>Welcome to Our Restaurant</p>
+    </div>
+
+    <!-- Button to Open Menu Page -->
+    <button class="btn-menu" onclick="openMenuPage()">View Menu</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Developed by Sedad Karam
+    </footer>
+
+    <!-- JavaScript to Open Menu Page -->
+    <script>
+        function openMenuPage() {
+            window.location.href = "resturant.html"; // Change 'menu.html' to your actual menu page
+        }
+    </script>
+
+</body>
+</html>
